@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 800px; /* or a value that looks good */
+}
+
+::ng-deep .fc-event.available-event {
+  cursor: pointer;
+}
+
+::ng-deep .fc-event.booked-event {
+  cursor: default;
+}
+
+
+@media (max-width: 576px) {
+  ::ng-deep .fc-event-title {
+    display: none;
+  }
+}
