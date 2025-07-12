@@ -7,7 +7,7 @@ export const environment = {
   slotMinTime: '10:00:00',
   slotMaxTime: '21:00:00',
   production: false,
-  googleCalendarApiKey: 'AIzaSyCtCQ7AQGh975ujL-SOXf8CAObyEPmPOeU', //from google cloud set up enable
+  googleCalendarApiKey: 'AIzaSyCc3DmfdgGP3YHBjDL_PQq6XRSPDBD2z8g', //from google cloud set up enable
   calendarId: '9050ee4acebf4b6a047e9cb9751cb0897c5be567c42b653915428939be7ab9ce@group.calendar.google.com',
   maxResults: 50
 };
