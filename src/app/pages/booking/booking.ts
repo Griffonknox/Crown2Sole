@@ -1,7 +1,8 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CalendarDisplayComponent } from '../../components/calendar-display/calendar-display';
 import { CalendarService } from '../../services/calendar.service';
+import { CalendarEvent } from '../../models/calendar-event';
 
 @Component({
   selector: 'app-booking',
@@ -10,24 +11,24 @@ import { CalendarService } from '../../services/calendar.service';
   styleUrl: './booking.css'
 })
 export class BookingComponent implements OnInit {
-  displayEvents: any[] = [];
+  displayEvents: CalendarEvent[] = [];
 
   constructor(private calendarService: CalendarService) {}
 
   ngOnInit() {
-    this.calendarService.getCalendarEvents().subscribe((response: any) => {
-      this.displayEvents = response.items.map((event: any) => {
-            const isAvailable = event.transparency === 'transparent';
-            return {
-              title: isAvailable ? 'Available' : 'Booked',
-              start: event.start.dateTime,
-              end: event.end.dateTime,
-              color: isAvailable ? '#28a745' : '#cccccc',
-              textColor: isAvailable ? '#fff' : '#444',
-              display: 'block',
-              classNames: [isAvailable ? 'available-event' : 'booked-event']
-            };
-        });
-      });
+    this.getData();
+  }
+
+  refresh() {
+    this.getData();
+  }
+
+  getData() {
+    this.calendarService.fetchCalendarEvents().subscribe(() => {
+      const events = this.calendarService.getStoredEvents();
+      if (events) {
+        this.displayEvents = events;
+      }
+    });
   }
 }
