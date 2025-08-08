@@ -1,10 +1,11 @@
 export const environment = {
   clientTitle: "Crown 2 Sole",
   clientHeader: "Crown 2 Sole - Massage Therapy",
-  clientDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+  clientDescription: `Hi, I’m Robert. I’ve been a licensed massage therapist for 16 years, 
+  and before that, I spent 4 years working as a physical therapist assistant. I travel to my clients’ 
+  homes because I believe you deserve to be treated in a comfortable, familiar environment without having to 
+  worry about high prices. My work ranges from deep tissue massage to gentle healing touch techniques, so I can customize your treatment to 
+  exactly what you need. I started this business model to make quality care more accessible and convenient for everyone.`,
   clientEmail: "Crown2SoleLLC@gmail.com",
   clientPhone: '956-451-6159',
   formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdDcYt9MvbhsAg9Tnc664RGt6dHXfeP0kpRCFyBWXP87Q2K3g/viewform?usp=pp_url&entry.531069=',
