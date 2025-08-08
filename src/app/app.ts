@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
+import { environment } from './environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,10 @@ import { RouterModule } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected title = 'schedulink';
+export class App implements OnInit{
+    clientTitle = environment.clientTitle;
+      ngOnInit() {
+    document.documentElement.style.setProperty('--nav-bar-bg', environment.theme.navBarBg);
+    document.documentElement.style.setProperty('--nav-bar-hover', environment.theme.navBarHover);
+  }
 }

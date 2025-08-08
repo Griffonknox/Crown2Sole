@@ -61,7 +61,7 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## GitHug Pages Deployment Resources
 
-ng build --output-path docs --base-href "/ScheduLink/"
+ng build --output-path docs --base-href "/Crown2Sole/"
 
 Builds the site for github pages, and stores in docs, after build manually go into docs and move items from browser folder back into docs folder for the githubs pages deploy. Repeat for every change and make sure to push to github the docs changes
 

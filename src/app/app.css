@@ -1,0 +1,8 @@
+.custom-navbar {
+  background-color: var(--nav-bar-bg) !important;
+}
+
+.custom-navbar .nav-link:hover {
+  background-color: var(--nav-bar-hover) !important;
+  border-radius: 4px;
+}

@@ -11,7 +11,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.css'
 })
 export class HomeComponent implements OnInit {
-  clientTitle = environment.clientTitle;
+  clientHeader = environment.clientHeader;
+  clientDescription = environment.clientDescription;
   clientEmail = environment.clientEmail;
   clientPhone = environment.clientPhone;
   nextAvailable: CalendarEvent | null = null;
