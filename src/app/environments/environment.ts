@@ -8,13 +8,13 @@ export const environment = {
   exactly what you need. I started this business model to make quality care more accessible and convenient for everyone.`,
   clientEmail: "Crown2SoleLLC@gmail.com",
   clientPhone: '956-451-6159',
-  formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdDcYt9MvbhsAg9Tnc664RGt6dHXfeP0kpRCFyBWXP87Q2K3g/viewform?usp=pp_url&entry.531069=',
   timeZone: 'central',
   slotMinTime: '10:00:00',
   slotMaxTime: '21:00:00',
   production: false,
-  googleCalendarApiKey: 'AIzaSyCc3DmfdgGP3YHBjDL_PQq6XRSPDBD2z8g',
-  calendarId: '9050ee4acebf4b6a047e9cb9751cb0897c5be567c42b653915428939be7ab9ce@group.calendar.google.com',
+  googleCalendarApiKey: 'AIzaSyAGhlKPfHMY2rWFGDdSjvAEZFL9GSPjlio',
+  calendarId: 'd754b1cccd288372254f4f1bc7e59c408fcd23158cccb65be0ac3808526b534b@group.calendar.google.com',
+    formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdDcYt9MvbhsAg9Tnc664RGt6dHXfeP0kpRCFyBWXP87Q2K3g/viewform?usp=pp_url&entry.531069=',
   maxResults: 50,
   theme: {
     navBarBg: '#154734',     // dark forest green
